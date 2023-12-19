@@ -13,8 +13,8 @@
 // Використовуй метод includes() для перевірки, чи масив friends містить friendName.
 
 
-
-const getUsersWithFriend = ((allUsers, friendName) => { 
+{
+  const getUsersWithFriend = ((allUsers, friendName) => { 
    return allUsers.filter(user => user.friends.includes(friendName));
 });
 
@@ -48,7 +48,8 @@ const allUsers = [
     name: "Sheree Anthony",
     friends: ["Goldie Gentry", "Briana Decker"]
   }
-];
+  ];
+
 
 console.log(getUsersWithFriend(allUsers, "Briana Decker")); 
 // [
@@ -75,3 +76,6 @@ console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
 // ]
 
 console.log(getUsersWithFriend(allUsers, "Adrian Cross" )); // []
+
+}
+
